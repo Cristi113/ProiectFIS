@@ -1,0 +1,18 @@
+D:\VisualStudio\Hotel Management System\bin\Debug\Hotel Management System.exe.config
+D:\VisualStudio\Hotel Management System\bin\Debug\Hotel Management System.exe
+D:\VisualStudio\Hotel Management System\bin\Debug\Hotel Management System.pdb
+D:\VisualStudio\Hotel Management System\bin\Debug\Guna.UI2.dll
+D:\VisualStudio\Hotel Management System\obj\Debug\Hotel Management System.csproj.AssemblyReference.cache
+D:\VisualStudio\Hotel Management System\obj\Debug\Hotel_Management_System.Properties.Resources.resources
+D:\VisualStudio\Hotel Management System\obj\Debug\Hotel Management System.csproj.GenerateResource.cache
+D:\VisualStudio\Hotel Management System\obj\Debug\Hotel Management System.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Hotel Management System\obj\Debug\Hotel Management System.csproj.CopyComplete
+D:\VisualStudio\Hotel Management System\obj\Debug\Hotel Management System.exe
+D:\VisualStudio\Hotel Management System\obj\Debug\Hotel Management System.pdb
+D:\VisualStudio\Hotel Management System\obj\Debug\Hotel_Management_System.LoginForm.resources
+D:\VisualStudio\Hotel Management System\bin\Debug\MySql.Data.dll
+D:\VisualStudio\Hotel Management System\bin\Debug\System.Memory.dll
+D:\VisualStudio\Hotel Management System\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\VisualStudio\Hotel Management System\bin\Debug\System.Numerics.Vectors.dll
+D:\VisualStudio\Hotel Management System\bin\Debug\System.Buffers.dll
+D:\VisualStudio\Hotel Management System\bin\Debug\MySql.Data.xml
