@@ -58,24 +58,32 @@ namespace Hotel_Management_System
 
         private void Button_login_Click(object sender, EventArgs e)
         {
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            string selectquerry = "SELECT * FROM `users` WHERE `username` = @usn AND `password` = @pass";
-            MySqlCommand command = new MySqlCommand(selectquerry, connect.GetConnection());
-            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = TextBox_username.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = TextBox_password.Text;
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-
-
-            if (table.Rows.Count > 0)
+            if (TextBox_username.Text.Trim().Equals("") || TextBox_password.Text == "")
             {
-                //MessageBox.Show("Yes");
-                this.Hide();
+                MessageBox.Show("Enter your username and password", "Missing Login Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                MessageBox.Show("No");
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                string selectquerry = "SELECT * FROM `users` WHERE `username` = @usn AND `password` = @pass";
+                MySqlCommand command = new MySqlCommand(selectquerry, connect.GetConnection());
+                command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = TextBox_username.Text;
+                command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = TextBox_password.Text;
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+
+
+                if (table.Rows.Count > 0)
+                {
+                    this.Hide();
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Your username and Password doesn't exists", "Wrong Login Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
