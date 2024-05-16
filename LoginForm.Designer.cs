@@ -65,7 +65,7 @@
             // TextBox_username
             // 
             this.TextBox_username.Location = new System.Drawing.Point(125, 585);
-            this.TextBox_username.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TextBox_username.Margin = new System.Windows.Forms.Padding(6);
             this.TextBox_username.Multiline = true;
             this.TextBox_username.Name = "TextBox_username";
             this.TextBox_username.Size = new System.Drawing.Size(418, 54);
@@ -75,12 +75,12 @@
             // TextBox_password
             // 
             this.TextBox_password.Location = new System.Drawing.Point(125, 676);
-            this.TextBox_password.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TextBox_password.Margin = new System.Windows.Forms.Padding(6);
             this.TextBox_password.Multiline = true;
             this.TextBox_password.Name = "TextBox_password";
+            this.TextBox_password.PasswordChar = '*';
             this.TextBox_password.Size = new System.Drawing.Size(418, 54);
             this.TextBox_password.TabIndex = 5;
-            this.TextBox_password.UseSystemPasswordChar = true;
             this.TextBox_password.TextChanged += new System.EventHandler(this.TextBox_password_TextChanged);
             // 
             // label_exit
@@ -127,7 +127,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(46, 799);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(68, 70);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -139,7 +139,7 @@
             this.Button_login.BackColor = System.Drawing.Color.Red;
             this.Button_login.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.Button_login.Location = new System.Drawing.Point(125, 799);
-            this.Button_login.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Button_login.Margin = new System.Windows.Forms.Padding(6);
             this.Button_login.Name = "Button_login";
             this.Button_login.Size = new System.Drawing.Size(422, 70);
             this.Button_login.TabIndex = 8;
@@ -151,7 +151,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(46, 676);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 57);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +162,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(46, 585);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 57);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +174,7 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(167, 105);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(292, 277);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -198,7 +198,7 @@
             this.Controls.Add(this.TextBox_username);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";

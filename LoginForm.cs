@@ -48,7 +48,7 @@ namespace Hotel_Management_System
 
         private void TextBox_password_TextChanged(object sender, EventArgs e)
         {
-            TextBox_password.UseSystemPasswordChar = true;
+            TextBox_password.UseSystemPasswordChar = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
