@@ -38,14 +38,16 @@
             this.button_home = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel_main = new System.Windows.Forms.Panel();
+            this.panel_cover = new System.Windows.Forms.Panel();
             this.panel_slide = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel_main = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_cover.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +74,7 @@
             this.button_logout.Image = ((System.Drawing.Image)(resources.GetObject("button_logout.Image")));
             this.button_logout.Location = new System.Drawing.Point(0, 678);
             this.button_logout.Name = "button_logout";
-            this.button_logout.Size = new System.Drawing.Size(182, 127);
+            this.button_logout.Size = new System.Drawing.Size(182, 157);
             this.button_logout.TabIndex = 5;
             this.button_logout.Text = "Logout";
             this.button_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -163,16 +165,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel_main
+            // panel_cover
             // 
-            this.panel_main.Controls.Add(this.panel_slide);
-            this.panel_main.Controls.Add(this.label2);
-            this.panel_main.Controls.Add(this.label1);
-            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(182, 0);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1293, 847);
-            this.panel_main.TabIndex = 1;
+            this.panel_cover.Controls.Add(this.panel_slide);
+            this.panel_cover.Controls.Add(this.label2);
+            this.panel_cover.Controls.Add(this.label1);
+            this.panel_cover.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_cover.Location = new System.Drawing.Point(182, 0);
+            this.panel_cover.Name = "panel_cover";
+            this.panel_cover.Size = new System.Drawing.Size(1293, 847);
+            this.panel_cover.TabIndex = 1;
             // 
             // panel_slide
             // 
@@ -187,9 +189,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(1243, 0);
+            this.label2.Location = new System.Drawing.Point(1252, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 49);
+            this.label2.Size = new System.Drawing.Size(29, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "X";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -199,31 +201,42 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(344, 47);
+            this.label1.Location = new System.Drawing.Point(511, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(555, 49);
+            this.label1.Size = new System.Drawing.Size(318, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hotel Management System";
             // 
+            // panel_main
+            // 
+            this.panel_main.Controls.Add(this.panel_cover);
+            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_main.Location = new System.Drawing.Point(0, 0);
+            this.panel_main.Name = "panel_main";
+            this.panel_main.Size = new System.Drawing.Size(1475, 847);
+            this.panel_main.TabIndex = 3;
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.ClientSize = new System.Drawing.Size(1475, 847);
-            this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel_main);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_cover.ResumeLayout(false);
+            this.panel_cover.PerformLayout();
             this.panel_main.ResumeLayout(false);
-            this.panel_main.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -232,7 +245,7 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel_main;
+        private System.Windows.Forms.Panel panel_cover;
         private System.Windows.Forms.Button button_home;
         private System.Windows.Forms.Button button_room;
         private System.Windows.Forms.Button button_reception;
@@ -243,5 +256,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Panel panel_slide;
         private System.Windows.Forms.Button button_logout;
+        private System.Windows.Forms.Panel panel_main;
     }
 }

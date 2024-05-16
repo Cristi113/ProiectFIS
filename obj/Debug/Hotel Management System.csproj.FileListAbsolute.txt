@@ -33,3 +33,21 @@ C:\Users\George\Source\Repos\ProiectFIS\obj\Debug\Hotel Ma.662265F2.Up2Date
 C:\Users\George\Source\Repos\ProiectFIS\obj\Debug\Hotel Management System.exe
 C:\Users\George\Source\Repos\ProiectFIS\obj\Debug\Hotel Management System.pdb
 C:\Users\George\source\repos\ProiectFIS\obj\Debug\Hotel_Management_System.MainForm.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\bin\Debug\Hotel Management System.exe.config
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\bin\Debug\Hotel Management System.exe
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\bin\Debug\Hotel Management System.pdb
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\bin\Debug\Guna.UI2.dll
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\bin\Debug\System.Memory.dll
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\bin\Debug\System.Buffers.dll
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel Management System.csproj.AssemblyReference.cache
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.GuestForm.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.LoginForm.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.MainForm.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.Properties.Resources.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel Management System.csproj.GenerateResource.cache
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel Management System.csproj.CoreCompileInputs.cache
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel Management System.csproj.CopyComplete
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel Management System.exe
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel Management System.pdb
