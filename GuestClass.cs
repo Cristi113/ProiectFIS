@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using System.Data;
+using Mysqlx.Crud;
+
+namespace Hotel_Management_System
+{
+    internal class GuestClass
+    {
+        DataBaseConnection connect = new DataBaseConnection();
+        public bool insertGuest(string id, string fname, string lname, string phone, string city)
+        {
+            string insertQuerry = "INSERT INTO `guest`(`GuestID`, `GuestFirstName`, `GuestLastName`, `GuestPhone`, `GuestCity`) VALUES(@id,@fname,@lname,@phone,@city)";
+            MySqlCommand command = new MySqlCommand(insertQuerry, connect.GetConnection());
+            command.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
+            command.Parameters.Add("@fname", MySqlDbType.VarChar).Value = fname;
+            command.Parameters.Add("@lname", MySqlDbType.VarChar).Value = lname;
+            command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = phone;
+            command.Parameters.Add("@city", MySqlDbType.VarChar).Value = city;
+
+            connect.OpenCon();
+            if(command.ExecuteNonQuery() == 1)
+            {
+                connect.CloseCon();
+                return true;
+            }
+            else
+            {
+                connect.CloseCon();
+                return false;
+            }
+        }
+    }
+}
