@@ -36,12 +36,12 @@ namespace Hotel_Management_System
             panel_slide.Height = button_guest.Height;
             panel_slide.Top = button_guest.Top;
 
-            panel_cover.Controls.Clear();
+            panel_main.Controls.Clear();
             GuestForm guest = new GuestForm();
             guest.TopLevel = false;
             guest.Dock = DockStyle.Fill;
             guest.FormBorderStyle = FormBorderStyle.None;
-            panel_cover.Controls.Add(guest);
+            panel_main.Controls.Add(guest);
             guest.Show();
         }
 
