@@ -55,3 +55,4 @@ C:\Users\George\source\repos\ProiectFIS\obj\Debug\Hotel_Management_System.GuestF
 C:\Users\George\source\repos\ProiectFIS\obj\Debug\Hotel_Management_System.RoomForm.resources
 C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.RoomForm.resources
 C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.ReservationForm.resources
+C:\Users\George\source\repos\ProiectFIS\obj\Debug\Hotel_Management_System.ReservationForm.resources
