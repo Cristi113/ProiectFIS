@@ -37,7 +37,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReservationForm));
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView_guest = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridView_reserv = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label_exit = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -51,7 +51,7 @@
             this.button_clean = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
             this.panel_button = new System.Windows.Forms.Panel();
-            this.button_save = new System.Windows.Forms.Button();
+            this.button_add = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox_roomType = new System.Windows.Forms.ComboBox();
@@ -60,7 +60,7 @@
             this.dateTimePicker_dateOut = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_guest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_reserv)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel_button.SuspendLayout();
             this.SuspendLayout();
@@ -119,7 +119,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView_guest);
+            this.panel2.Controls.Add(this.dataGridView_reserv);
             this.panel2.Controls.Add(this.guna2DataGridView1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 85);
@@ -127,10 +127,10 @@
             this.panel2.Size = new System.Drawing.Size(1293, 347);
             this.panel2.TabIndex = 25;
             // 
-            // dataGridView_guest
+            // dataGridView_reserv
             // 
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dataGridView_guest.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView_reserv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,8 +138,8 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_guest.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView_guest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataGridView_reserv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView_reserv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -147,36 +147,37 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_guest.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView_guest.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView_guest.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_guest.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView_guest.Name = "dataGridView_guest";
-            this.dataGridView_guest.RowHeadersVisible = false;
-            this.dataGridView_guest.RowHeadersWidth = 72;
-            this.dataGridView_guest.Size = new System.Drawing.Size(1293, 347);
-            this.dataGridView_guest.TabIndex = 1;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dataGridView_guest.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView_guest.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.Height = 23;
-            this.dataGridView_guest.ThemeStyle.ReadOnly = false;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_guest.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Red;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.Height = 22;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_guest.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_reserv.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView_reserv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_reserv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_reserv.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView_reserv.Name = "dataGridView_reserv";
+            this.dataGridView_reserv.RowHeadersVisible = false;
+            this.dataGridView_reserv.RowHeadersWidth = 72;
+            this.dataGridView_reserv.Size = new System.Drawing.Size(1293, 347);
+            this.dataGridView_reserv.TabIndex = 1;
+            this.dataGridView_reserv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_reserv.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGridView_reserv.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_reserv.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGridView_reserv.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_reserv.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_reserv.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_reserv.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataGridView_reserv.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_reserv.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_reserv.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView_reserv.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataGridView_reserv.ThemeStyle.HeaderStyle.Height = 23;
+            this.dataGridView_reserv.ThemeStyle.ReadOnly = false;
+            this.dataGridView_reserv.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_reserv.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_reserv.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_reserv.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Red;
+            this.dataGridView_reserv.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGridView_reserv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_reserv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_reserv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_reserv_CellClick);
             // 
             // label_exit
             // 
@@ -259,6 +260,7 @@
             this.button_update.Text = "Update";
             this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // label4
             // 
@@ -294,6 +296,7 @@
             this.button_clean.Text = "Clean";
             this.button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_clean.UseVisualStyleBackColor = true;
+            this.button_clean.Click += new System.EventHandler(this.button_clean_Click);
             // 
             // button_delete
             // 
@@ -309,33 +312,35 @@
             this.button_delete.Text = "Delete";
             this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
             // panel_button
             // 
             this.panel_button.Controls.Add(this.button_clean);
             this.panel_button.Controls.Add(this.button_delete);
             this.panel_button.Controls.Add(this.button_update);
-            this.panel_button.Controls.Add(this.button_save);
+            this.panel_button.Controls.Add(this.button_add);
             this.panel_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_button.Location = new System.Drawing.Point(0, 747);
             this.panel_button.Name = "panel_button";
             this.panel_button.Size = new System.Drawing.Size(1293, 100);
             this.panel_button.TabIndex = 13;
             // 
-            // button_save
+            // button_add
             // 
-            this.button_save.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button_save.FlatAppearance.BorderSize = 0;
-            this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_save.ForeColor = System.Drawing.Color.Red;
-            this.button_save.Image = ((System.Drawing.Image)(resources.GetObject("button_save.Image")));
-            this.button_save.Location = new System.Drawing.Point(0, 0);
-            this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(326, 100);
-            this.button_save.TabIndex = 2;
-            this.button_save.Text = "Add";
-            this.button_save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_save.UseVisualStyleBackColor = true;
+            this.button_add.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button_add.FlatAppearance.BorderSize = 0;
+            this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_add.ForeColor = System.Drawing.Color.Red;
+            this.button_add.Image = ((System.Drawing.Image)(resources.GetObject("button_add.Image")));
+            this.button_add.Location = new System.Drawing.Point(0, 0);
+            this.button_add.Name = "button_add";
+            this.button_add.Size = new System.Drawing.Size(326, 100);
+            this.button_add.TabIndex = 2;
+            this.button_add.Text = "Add";
+            this.button_add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
             // label3
             // 
@@ -376,16 +381,20 @@
             // 
             // dateTimePicker_dateIn
             // 
+            this.dateTimePicker_dateIn.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker_dateIn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker_dateIn.Location = new System.Drawing.Point(788, 470);
             this.dateTimePicker_dateIn.Name = "dateTimePicker_dateIn";
-            this.dateTimePicker_dateIn.Size = new System.Drawing.Size(368, 32);
+            this.dateTimePicker_dateIn.Size = new System.Drawing.Size(173, 32);
             this.dateTimePicker_dateIn.TabIndex = 29;
             // 
             // dateTimePicker_dateOut
             // 
+            this.dateTimePicker_dateOut.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker_dateOut.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker_dateOut.Location = new System.Drawing.Point(788, 544);
             this.dateTimePicker_dateOut.Name = "dateTimePicker_dateOut";
-            this.dateTimePicker_dateOut.Size = new System.Drawing.Size(368, 32);
+            this.dateTimePicker_dateOut.Size = new System.Drawing.Size(173, 32);
             this.dateTimePicker_dateOut.TabIndex = 30;
             // 
             // ReservationForm
@@ -418,7 +427,7 @@
             this.Load += new System.EventHandler(this.ReservationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_guest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_reserv)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel_button.ResumeLayout(false);
@@ -431,7 +440,7 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_guest;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_reserv;
         private System.Windows.Forms.Label label_exit;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
@@ -445,7 +454,7 @@
         private System.Windows.Forms.Button button_clean;
         private System.Windows.Forms.Button button_delete;
         private System.Windows.Forms.Panel panel_button;
-        private System.Windows.Forms.Button button_save;
+        private System.Windows.Forms.Button button_add;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox_roomType;
