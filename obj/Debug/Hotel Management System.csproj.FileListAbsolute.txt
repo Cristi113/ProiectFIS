@@ -57,3 +57,5 @@ C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_Sys
 C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.ReservationForm.resources
 C:\Users\George\source\repos\ProiectFIS\obj\Debug\Hotel_Management_System.ReservationForm.resources
 C:\Users\George\source\repos\ProiectFIS\obj\Debug\Hotel_Management_System.MainFormClient.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.MainFormClient.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.HotelSearch.resources

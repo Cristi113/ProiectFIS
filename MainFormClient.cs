@@ -30,5 +30,19 @@ namespace Hotel_Management_System
             this.Hide();
             login.Show();
         }
+
+        private void button_hotelSearch_Click(object sender, EventArgs e)
+        {
+            panel_slide.Height = button_hotelSearch.Height;
+            panel_slide.Top = button_hotelSearch.Top;
+
+            panel_main.Controls.Clear();
+            HotelSearch hotelSearch = new HotelSearch();
+            hotelSearch.TopLevel = false;
+            hotelSearch.Dock = DockStyle.Fill;
+            hotelSearch.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(hotelSearch);
+            hotelSearch.Show();
+        }
     }
 }
