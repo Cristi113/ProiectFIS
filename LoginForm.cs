@@ -73,17 +73,33 @@ namespace Hotel_Management_System
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
 
-
-                if (table.Rows.Count > 0)
+                if (TextBox_username.Text.Trim().StartsWith("Manager"))
                 {
-                    this.Hide();
-                    MainForm mainForm = new MainForm();
-                    mainForm.Show();
+                    if (table.Rows.Count > 0)
+                    {
+                        this.Hide();
+                        MainForm mainForm = new MainForm();
+                        mainForm.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Your username and Password doesn't exists", "Wrong Login Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Your username and Password doesn't exists", "Wrong Login Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (table.Rows.Count > 0)
+                    {
+                        this.Hide();
+                        MainFormClient mainFormClient = new MainFormClient();
+                        mainFormClient.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Your username and Password doesn't exists", "Wrong Login Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
+
             }
         }
     }
