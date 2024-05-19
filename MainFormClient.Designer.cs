@@ -164,6 +164,7 @@
             this.button_logout.Text = "Logout";
             this.button_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_logout.UseVisualStyleBackColor = true;
+            this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
             // 
             // button_room
             // 

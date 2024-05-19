@@ -21,5 +21,14 @@ namespace Hotel_Management_System
         {
             Application.Exit();
         }
+
+        private void button_logout_Click(object sender, EventArgs e)
+        {
+            panel_slide.Height = button_logout.Height;
+            panel_slide.Top = button_logout.Top;
+            LoginForm login = new LoginForm();
+            this.Hide();
+            login.Show();
+        }
     }
 }
