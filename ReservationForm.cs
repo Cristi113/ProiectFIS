@@ -112,12 +112,12 @@ namespace Hotel_Management_System
             textBox_reserveId.Text = dataGridView_reserv.CurrentRow.Cells[0].Value.ToString();
             textBox_guestId.Text = dataGridView_reserv.CurrentRow.Cells[1].Value.ToString();
 
-            string rid = dataGridView_reserv.CurrentRow.Cells[2].Value.ToString();
+            string rid = dataGridView_reserv.CurrentRow.Cells[3].Value.ToString();
             comboBox_roomType.SelectedValue = reservation.typeByRoomID(rid);
             comboBox_roomId.Text = rid;
 
-            dateTimePicker_dateIn.Text = dataGridView_reserv.CurrentRow.Cells[3].Value.ToString();
-            dateTimePicker_dateOut.Text = dataGridView_reserv.CurrentRow.Cells[4].Value.ToString();
+            dateTimePicker_dateIn.Text = dataGridView_reserv.CurrentRow.Cells[4].Value.ToString();
+            dateTimePicker_dateOut.Text = dataGridView_reserv.CurrentRow.Cells[5].Value.ToString();
         }
 
         private void button_clean_Click(object sender, EventArgs e)

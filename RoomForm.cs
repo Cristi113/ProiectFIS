@@ -36,7 +36,7 @@ namespace Hotel_Management_System
             int floor = Convert.ToInt32(text_floor.Text);
             string phone = text_phone.Text;
             string status = radioButton_free.Checked ? "Free" : "Busy";
-            string type = comboBox_roomType.Text;
+            int type = Convert.ToInt32(comboBox_roomType.SelectedValue.ToString());
             string id = textBox_ID.Text;
             try
             {
@@ -74,28 +74,15 @@ namespace Hotel_Management_System
 
         private void button_update_Click(object sender, EventArgs e)
         {
-            int floor;
-            if (!int.TryParse(text_floor.Text, out floor))
-            {
-                MessageBox.Show("Please enter a valid floor number.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             string phone = text_phone.Text;
             string status = radioButton_free.Checked ? "Free" : "Busy";
-            string type = comboBox_roomType.Text;
+            int type = Convert.ToInt32(comboBox_roomType.SelectedValue.ToString());
             string id = textBox_ID.Text;
-
-            if (string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(type) || string.IsNullOrWhiteSpace(id))
-            {
-                MessageBox.Show("Please fill in all fields.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            int floor = Convert.ToInt32(text_floor.Text);
 
             try
             {
-                bool isUpdated = room.updateRoom(id, floor, phone, status, type);
-                if (isUpdated)
+                if (room.updateRoom(id, floor, phone, status, type))
                 {
                     MessageBox.Show("Room Updated Successfully", "Update Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     getRooms();
@@ -103,38 +90,31 @@ namespace Hotel_Management_System
                 }
                 else
                 {
-                    MessageBox.Show("Room was not updated successfully. Please check the details and try again.", "Update Room", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Room Not Updated Successfully", "Update Room", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void dataGridView_room_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // Asigură că indexul rândului selectat este valid
+            textBox_ID.Text = dataGridView_room.CurrentRow.Cells[0].Value.ToString();
+            comboBox_roomType.SelectedValue = dataGridView_room.CurrentRow.Cells[1].Value.ToString();
+            text_phone.Text = dataGridView_room.CurrentRow.Cells[2].Value.ToString();
+            string rButton = dataGridView_room.CurrentRow.Cells[3].Value.ToString();
+            if (rButton.Equals("Free"))
             {
-                DataGridViewRow row = dataGridView_room.Rows[e.RowIndex];
-
-                textBox_ID.Text = row.Cells[0].Value.ToString();
-                text_floor.Text = row.Cells[1].Value.ToString();
-                text_phone.Text = row.Cells[2].Value.ToString();
-                comboBox_roomType.Text = row.Cells[4].Value.ToString(); // Asigură că valoarea este setată corect pentru combo box
-
-                string status = row.Cells[3].Value.ToString();
-                if (status.Equals("Free"))
-                {
-                    radioButton_free.Checked = true;
-                    radioButton_busy.Checked = false;
-                }
-                else
-                {
-                    radioButton_free.Checked = false;
-                    radioButton_busy.Checked = true;
-                }
+                radioButton_free.Checked = true;
             }
+            else
+            {
+                radioButton_busy.Checked = true;
+            }
+            text_floor.Text = dataGridView_room.CurrentRow.Cells[4].Value.ToString();
         }
 
         private void button_delete_Click(object sender, EventArgs e)
