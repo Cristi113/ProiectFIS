@@ -24,13 +24,13 @@ namespace Hotel_Management_System
             Application.Exit();
         }
 
-        private void ReservationForm_Load(object sender, EventArgs e) //////////////////// AICI NU GASESTE ROOMID
+        private void ReservationForm_Load(object sender, EventArgs e)
         {
             comboBox_roomType.DataSource = room.getRoomType();
             comboBox_roomType.DisplayMember = "label";
             comboBox_roomType.ValueMember = "categoryID";
 
-            string type = comboBox_roomType.SelectedValue.ToString();
+            int type = Convert.ToInt32(comboBox_roomType.SelectedValue.ToString());
 
             comboBox_roomId.DataSource = reservation.roomByType(type);
             comboBox_roomId.DisplayMember = "roomID";
@@ -46,10 +46,17 @@ namespace Hotel_Management_System
 
         private void comboBox_roomType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string type = comboBox_roomType.SelectedValue.ToString();
-            comboBox_roomId.DataSource = reservation.roomByType(type);
-            comboBox_roomId.DisplayMember = "roomID";
-            comboBox_roomId.ValueMember = "roomID";
+            try
+            {
+                int type = Convert.ToInt32(comboBox_roomType.SelectedValue);
+                comboBox_roomId.DataSource = reservation.roomByType(type);
+                comboBox_roomId.DisplayMember = "roomID";
+                comboBox_roomId.ValueMember = "roomID";
+            }
+            catch(Exception)
+            {
+                //
+            }
         }
 
         private void button_add_Click(object sender, EventArgs e)
@@ -82,9 +89,9 @@ namespace Hotel_Management_System
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"Reservation add Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Reservation add Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -95,15 +102,15 @@ namespace Hotel_Management_System
 
             try
             {
-                if(reservation.deleteReservation(reserID) && reservation.setReservRoom(rid,"Free"))
+                if (reservation.deleteReservation(reserID) && reservation.setReservRoom(rid, "Free"))
                 {
                     getReservTable();
                     MessageBox.Show("Delete Reservation Successfully", "Deleted Reservation", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch( Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error Delete",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error Delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -149,7 +156,7 @@ namespace Hotel_Management_System
                 }
                 else
                 {
-                    if (reservation.updateReservation(reservID,guestID, roomID, dIn, dOut) && reservation.setReservRoom(roomID, "Busy"))
+                    if (reservation.updateReservation(reservID, guestID, roomID, dIn, dOut) && reservation.setReservRoom(roomID, "Busy"))
                     {
                         getReservTable();
                         MessageBox.Show("Reservation updated Successfully", "Update Reservation", MessageBoxButtons.OK, MessageBoxIcon.Information);

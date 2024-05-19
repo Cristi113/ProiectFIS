@@ -44,11 +44,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel_main = new System.Windows.Forms.Panel();
+            this.textBox_quote = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_cover.SuspendLayout();
             this.panel_main.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -167,9 +174,13 @@
             // 
             // panel_cover
             // 
+            this.panel_cover.Controls.Add(this.textBox_quote);
             this.panel_cover.Controls.Add(this.panel_slide);
             this.panel_cover.Controls.Add(this.label2);
             this.panel_cover.Controls.Add(this.label1);
+            this.panel_cover.Controls.Add(this.pictureBox3);
+            this.panel_cover.Controls.Add(this.pictureBox2);
+            this.panel_cover.Controls.Add(this.pictureBox4);
             this.panel_cover.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel_cover.Location = new System.Drawing.Point(182, 0);
             this.panel_cover.Name = "panel_cover";
@@ -199,13 +210,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(511, 65);
+            this.label1.Location = new System.Drawing.Point(426, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 29);
+            this.label1.Size = new System.Drawing.Size(465, 112);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Hotel Management System";
+            this.label1.Text = "Hotel Management \r\nSystem";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel_main
             // 
@@ -215,6 +227,47 @@
             this.panel_main.Name = "panel_main";
             this.panel_main.Size = new System.Drawing.Size(1475, 847);
             this.panel_main.TabIndex = 3;
+            // 
+            // textBox_quote
+            // 
+            this.textBox_quote.BackColor = System.Drawing.SystemColors.InfoText;
+            this.textBox_quote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_quote.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_quote.ForeColor = System.Drawing.Color.Red;
+            this.textBox_quote.Location = new System.Drawing.Point(452, 144);
+            this.textBox_quote.Multiline = true;
+            this.textBox_quote.Name = "textBox_quote";
+            this.textBox_quote.Size = new System.Drawing.Size(420, 26);
+            this.textBox_quote.TabIndex = 8;
+            this.textBox_quote.Text = "“Leadership is the capacity to translate vision into reality.”";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 176);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1290, 671);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(963, -3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(202, 188);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(124, -3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(202, 188);
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
             // 
             // MainForm
             // 
@@ -237,6 +290,9 @@
             this.panel_cover.ResumeLayout(false);
             this.panel_cover.PerformLayout();
             this.panel_main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -257,5 +313,9 @@
         private System.Windows.Forms.Panel panel_slide;
         private System.Windows.Forms.Button button_logout;
         private System.Windows.Forms.Panel panel_main;
+        private System.Windows.Forms.TextBox textBox_quote;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

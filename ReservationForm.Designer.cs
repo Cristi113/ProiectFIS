@@ -93,7 +93,7 @@
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 72;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1293, 347);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1475, 347);
             this.guna2DataGridView1.TabIndex = 0;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -124,7 +124,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 85);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1293, 347);
+            this.panel2.Size = new System.Drawing.Size(1475, 347);
             this.panel2.TabIndex = 25;
             // 
             // dataGridView_reserv
@@ -152,9 +152,10 @@
             this.dataGridView_reserv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView_reserv.Location = new System.Drawing.Point(0, 0);
             this.dataGridView_reserv.Name = "dataGridView_reserv";
+            this.dataGridView_reserv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView_reserv.RowHeadersVisible = false;
             this.dataGridView_reserv.RowHeadersWidth = 72;
-            this.dataGridView_reserv.Size = new System.Drawing.Size(1293, 347);
+            this.dataGridView_reserv.Size = new System.Drawing.Size(1475, 347);
             this.dataGridView_reserv.TabIndex = 1;
             this.dataGridView_reserv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView_reserv.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -184,7 +185,7 @@
             this.label_exit.AutoSize = true;
             this.label_exit.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_exit.ForeColor = System.Drawing.Color.Red;
-            this.label_exit.Location = new System.Drawing.Point(1252, 9);
+            this.label_exit.Location = new System.Drawing.Point(1446, 0);
             this.label_exit.Name = "label_exit";
             this.label_exit.Size = new System.Drawing.Size(29, 29);
             this.label_exit.TabIndex = 2;
@@ -196,7 +197,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(560, 26);
+            this.label6.Location = new System.Drawing.Point(694, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(246, 29);
             this.label6.TabIndex = 1;
@@ -209,14 +210,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1293, 85);
+            this.panel1.Size = new System.Drawing.Size(1475, 85);
             this.panel1.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(342, 549);
+            this.label2.Location = new System.Drawing.Point(494, 546);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 24);
             this.label2.TabIndex = 17;
@@ -224,7 +225,7 @@
             // 
             // textBox_guestId
             // 
-            this.textBox_guestId.Location = new System.Drawing.Point(444, 541);
+            this.textBox_guestId.Location = new System.Drawing.Point(596, 538);
             this.textBox_guestId.Name = "textBox_guestId";
             this.textBox_guestId.Size = new System.Drawing.Size(173, 32);
             this.textBox_guestId.TabIndex = 16;
@@ -233,7 +234,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(323, 476);
+            this.label1.Location = new System.Drawing.Point(475, 473);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 24);
             this.label1.TabIndex = 15;
@@ -241,19 +242,18 @@
             // 
             // textBox_reserveId
             // 
-            this.textBox_reserveId.Location = new System.Drawing.Point(444, 473);
+            this.textBox_reserveId.Location = new System.Drawing.Point(596, 470);
             this.textBox_reserveId.Name = "textBox_reserveId";
             this.textBox_reserveId.Size = new System.Drawing.Size(173, 32);
             this.textBox_reserveId.TabIndex = 14;
             // 
             // button_update
             // 
-            this.button_update.Dock = System.Windows.Forms.DockStyle.Left;
             this.button_update.FlatAppearance.BorderSize = 0;
             this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_update.ForeColor = System.Drawing.Color.Red;
             this.button_update.Image = ((System.Drawing.Image)(resources.GetObject("button_update.Image")));
-            this.button_update.Location = new System.Drawing.Point(326, 0);
+            this.button_update.Location = new System.Drawing.Point(535, 0);
             this.button_update.Name = "button_update";
             this.button_update.Size = new System.Drawing.Size(326, 100);
             this.button_update.TabIndex = 3;
@@ -266,7 +266,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(677, 544);
+            this.label4.Location = new System.Drawing.Point(829, 541);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 24);
             this.label4.TabIndex = 23;
@@ -276,7 +276,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(695, 476);
+            this.label5.Location = new System.Drawing.Point(847, 473);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 24);
             this.label5.TabIndex = 21;
@@ -284,12 +284,11 @@
             // 
             // button_clean
             // 
-            this.button_clean.Dock = System.Windows.Forms.DockStyle.Left;
             this.button_clean.FlatAppearance.BorderSize = 0;
             this.button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clean.ForeColor = System.Drawing.Color.Red;
             this.button_clean.Image = ((System.Drawing.Image)(resources.GetObject("button_clean.Image")));
-            this.button_clean.Location = new System.Drawing.Point(978, 0);
+            this.button_clean.Location = new System.Drawing.Point(1095, 0);
             this.button_clean.Name = "button_clean";
             this.button_clean.Size = new System.Drawing.Size(314, 100);
             this.button_clean.TabIndex = 5;
@@ -300,14 +299,13 @@
             // 
             // button_delete
             // 
-            this.button_delete.Dock = System.Windows.Forms.DockStyle.Left;
             this.button_delete.FlatAppearance.BorderSize = 0;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete.ForeColor = System.Drawing.Color.Red;
             this.button_delete.Image = ((System.Drawing.Image)(resources.GetObject("button_delete.Image")));
-            this.button_delete.Location = new System.Drawing.Point(652, 0);
+            this.button_delete.Location = new System.Drawing.Point(783, 0);
             this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(326, 100);
+            this.button_delete.Size = new System.Drawing.Size(330, 100);
             this.button_delete.TabIndex = 4;
             this.button_delete.Text = "Delete";
             this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -323,17 +321,16 @@
             this.panel_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_button.Location = new System.Drawing.Point(0, 747);
             this.panel_button.Name = "panel_button";
-            this.panel_button.Size = new System.Drawing.Size(1293, 100);
+            this.panel_button.Size = new System.Drawing.Size(1475, 100);
             this.panel_button.TabIndex = 13;
             // 
             // button_add
             // 
-            this.button_add.Dock = System.Windows.Forms.DockStyle.Left;
             this.button_add.FlatAppearance.BorderSize = 0;
             this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_add.ForeColor = System.Drawing.Color.Red;
             this.button_add.Image = ((System.Drawing.Image)(resources.GetObject("button_add.Image")));
-            this.button_add.Location = new System.Drawing.Point(0, 0);
+            this.button_add.Location = new System.Drawing.Point(254, 3);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(326, 100);
             this.button_add.TabIndex = 2;
@@ -346,7 +343,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(308, 614);
+            this.label3.Location = new System.Drawing.Point(460, 611);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 24);
             this.label3.TabIndex = 19;
@@ -356,7 +353,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(335, 681);
+            this.label7.Location = new System.Drawing.Point(487, 678);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 24);
             this.label7.TabIndex = 26;
@@ -365,7 +362,7 @@
             // comboBox_roomType
             // 
             this.comboBox_roomType.FormattingEnabled = true;
-            this.comboBox_roomType.Location = new System.Drawing.Point(444, 611);
+            this.comboBox_roomType.Location = new System.Drawing.Point(596, 608);
             this.comboBox_roomType.Name = "comboBox_roomType";
             this.comboBox_roomType.Size = new System.Drawing.Size(173, 32);
             this.comboBox_roomType.TabIndex = 27;
@@ -374,7 +371,7 @@
             // comboBox_roomId
             // 
             this.comboBox_roomId.FormattingEnabled = true;
-            this.comboBox_roomId.Location = new System.Drawing.Point(444, 678);
+            this.comboBox_roomId.Location = new System.Drawing.Point(596, 675);
             this.comboBox_roomId.Name = "comboBox_roomId";
             this.comboBox_roomId.Size = new System.Drawing.Size(173, 32);
             this.comboBox_roomId.TabIndex = 28;
@@ -383,7 +380,7 @@
             // 
             this.dateTimePicker_dateIn.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker_dateIn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_dateIn.Location = new System.Drawing.Point(788, 470);
+            this.dateTimePicker_dateIn.Location = new System.Drawing.Point(940, 467);
             this.dateTimePicker_dateIn.Name = "dateTimePicker_dateIn";
             this.dateTimePicker_dateIn.Size = new System.Drawing.Size(173, 32);
             this.dateTimePicker_dateIn.TabIndex = 29;
@@ -392,7 +389,7 @@
             // 
             this.dateTimePicker_dateOut.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker_dateOut.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_dateOut.Location = new System.Drawing.Point(788, 544);
+            this.dateTimePicker_dateOut.Location = new System.Drawing.Point(940, 541);
             this.dateTimePicker_dateOut.Name = "dateTimePicker_dateOut";
             this.dateTimePicker_dateOut.Size = new System.Drawing.Size(173, 32);
             this.dateTimePicker_dateOut.TabIndex = 30;
@@ -402,7 +399,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ClientSize = new System.Drawing.Size(1293, 847);
+            this.ClientSize = new System.Drawing.Size(1475, 847);
             this.Controls.Add(this.dateTimePicker_dateOut);
             this.Controls.Add(this.dateTimePicker_dateIn);
             this.Controls.Add(this.comboBox_roomId);

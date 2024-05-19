@@ -12,18 +12,18 @@ namespace Hotel_Management_System
     {
         DataBaseConnection connect = new DataBaseConnection();
 
-        public DataTable roomByType(string type)
+        public DataTable roomByType(int type)
         {
             string selectQuerry = "SELECT * FROM `room` WHERE `roomType` = @type AND `roomStatus` = 'Free'";
             MySqlCommand command = new MySqlCommand(selectQuerry, connect.GetConnection());
-            command.Parameters.Add("@type", MySqlDbType.VarChar).Value = type;
+            command.Parameters.Add("@type", MySqlDbType.Int32).Value = type;
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);
             return table;
         }
 
-        public string typeByRoomID(string rid)
+        public int typeByRoomID(string rid)
         {
             string selectQuerry = "SELECT 'roomType' FROM `room` WHERE `roomID` = @rid";
             MySqlCommand command = new MySqlCommand(selectQuerry, connect.GetConnection());
@@ -31,7 +31,7 @@ namespace Hotel_Management_System
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);
-            return table.Rows[0][0].ToString();
+            return Convert.ToInt32(table.Rows[0][0].ToString());
         }
 
         public DataTable getReserv()

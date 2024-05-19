@@ -70,19 +70,18 @@
             this.panel_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_button.Location = new System.Drawing.Point(0, 747);
             this.panel_button.Name = "panel_button";
-            this.panel_button.Size = new System.Drawing.Size(1293, 100);
+            this.panel_button.Size = new System.Drawing.Size(1475, 100);
             this.panel_button.TabIndex = 0;
             // 
             // button_clean
             // 
-            this.button_clean.Dock = System.Windows.Forms.DockStyle.Left;
             this.button_clean.FlatAppearance.BorderSize = 0;
             this.button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clean.ForeColor = System.Drawing.Color.Red;
             this.button_clean.Image = ((System.Drawing.Image)(resources.GetObject("button_clean.Image")));
-            this.button_clean.Location = new System.Drawing.Point(978, 0);
+            this.button_clean.Location = new System.Drawing.Point(1029, 0);
             this.button_clean.Name = "button_clean";
-            this.button_clean.Size = new System.Drawing.Size(314, 100);
+            this.button_clean.Size = new System.Drawing.Size(360, 100);
             this.button_clean.TabIndex = 5;
             this.button_clean.Text = "Clean";
             this.button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -91,14 +90,13 @@
             // 
             // button_delete
             // 
-            this.button_delete.Dock = System.Windows.Forms.DockStyle.Left;
             this.button_delete.FlatAppearance.BorderSize = 0;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete.ForeColor = System.Drawing.Color.Red;
             this.button_delete.Image = ((System.Drawing.Image)(resources.GetObject("button_delete.Image")));
-            this.button_delete.Location = new System.Drawing.Point(652, 0);
+            this.button_delete.Location = new System.Drawing.Point(744, 0);
             this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(326, 100);
+            this.button_delete.Size = new System.Drawing.Size(372, 100);
             this.button_delete.TabIndex = 4;
             this.button_delete.Text = "Delete";
             this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -107,14 +105,13 @@
             // 
             // button_update
             // 
-            this.button_update.Dock = System.Windows.Forms.DockStyle.Left;
             this.button_update.FlatAppearance.BorderSize = 0;
             this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_update.ForeColor = System.Drawing.Color.Red;
             this.button_update.Image = ((System.Drawing.Image)(resources.GetObject("button_update.Image")));
-            this.button_update.Location = new System.Drawing.Point(326, 0);
+            this.button_update.Location = new System.Drawing.Point(476, 0);
             this.button_update.Name = "button_update";
-            this.button_update.Size = new System.Drawing.Size(326, 100);
+            this.button_update.Size = new System.Drawing.Size(372, 100);
             this.button_update.TabIndex = 3;
             this.button_update.Text = "Update";
             this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -123,14 +120,13 @@
             // 
             // button_save
             // 
-            this.button_save.Dock = System.Windows.Forms.DockStyle.Left;
             this.button_save.FlatAppearance.BorderSize = 0;
             this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_save.ForeColor = System.Drawing.Color.Red;
             this.button_save.Image = ((System.Drawing.Image)(resources.GetObject("button_save.Image")));
-            this.button_save.Location = new System.Drawing.Point(0, 0);
+            this.button_save.Location = new System.Drawing.Point(178, 0);
             this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(326, 100);
+            this.button_save.Size = new System.Drawing.Size(372, 100);
             this.button_save.TabIndex = 2;
             this.button_save.Text = "Save";
             this.button_save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -139,82 +135,82 @@
             // 
             // textBox_ID
             // 
-            this.textBox_ID.Location = new System.Drawing.Point(444, 473);
+            this.textBox_ID.Location = new System.Drawing.Point(573, 480);
             this.textBox_ID.Name = "textBox_ID";
-            this.textBox_ID.Size = new System.Drawing.Size(173, 50);
+            this.textBox_ID.Size = new System.Drawing.Size(173, 32);
             this.textBox_ID.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(368, 476);
+            this.label1.Location = new System.Drawing.Point(497, 483);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 44);
+            this.label1.Size = new System.Drawing.Size(70, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "ID No:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(316, 549);
+            this.label2.Location = new System.Drawing.Point(445, 556);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(224, 44);
+            this.label2.Size = new System.Drawing.Size(125, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "First Name:";
             // 
             // textBox_fName
             // 
-            this.textBox_fName.Location = new System.Drawing.Point(444, 541);
+            this.textBox_fName.Location = new System.Drawing.Point(573, 548);
             this.textBox_fName.Name = "textBox_fName";
-            this.textBox_fName.Size = new System.Drawing.Size(173, 50);
+            this.textBox_fName.Size = new System.Drawing.Size(173, 32);
             this.textBox_fName.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(317, 619);
+            this.label3.Location = new System.Drawing.Point(446, 626);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(221, 44);
+            this.label3.Size = new System.Drawing.Size(124, 24);
             this.label3.TabIndex = 6;
             this.label3.Text = "Last Name:";
             // 
             // textBox_lName
             // 
-            this.textBox_lName.Location = new System.Drawing.Point(444, 616);
+            this.textBox_lName.Location = new System.Drawing.Point(573, 623);
             this.textBox_lName.Name = "textBox_lName";
-            this.textBox_lName.Size = new System.Drawing.Size(173, 50);
+            this.textBox_lName.Size = new System.Drawing.Size(173, 32);
             this.textBox_lName.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(722, 544);
+            this.label4.Location = new System.Drawing.Point(851, 551);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 44);
+            this.label4.Size = new System.Drawing.Size(55, 24);
             this.label4.TabIndex = 10;
             this.label4.Text = "City:";
             // 
             // textBox_city
             // 
-            this.textBox_city.Location = new System.Drawing.Point(777, 541);
+            this.textBox_city.Location = new System.Drawing.Point(906, 548);
             this.textBox_city.Name = "textBox_city";
-            this.textBox_city.Size = new System.Drawing.Size(173, 50);
+            this.textBox_city.Size = new System.Drawing.Size(173, 32);
             this.textBox_city.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(695, 476);
+            this.label5.Location = new System.Drawing.Point(824, 483);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 44);
+            this.label5.Size = new System.Drawing.Size(82, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Phone:";
             // 
             // textBox_phone
             // 
-            this.textBox_phone.Location = new System.Drawing.Point(777, 473);
+            this.textBox_phone.Location = new System.Drawing.Point(906, 480);
             this.textBox_phone.Name = "textBox_phone";
-            this.textBox_phone.Size = new System.Drawing.Size(173, 50);
+            this.textBox_phone.Size = new System.Drawing.Size(173, 32);
             this.textBox_phone.TabIndex = 7;
             // 
             // panel1
@@ -224,7 +220,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1293, 85);
+            this.panel1.Size = new System.Drawing.Size(1475, 85);
             this.panel1.TabIndex = 11;
             // 
             // label_exit
@@ -232,9 +228,9 @@
             this.label_exit.AutoSize = true;
             this.label_exit.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_exit.ForeColor = System.Drawing.Color.Red;
-            this.label_exit.Location = new System.Drawing.Point(1252, 9);
+            this.label_exit.Location = new System.Drawing.Point(1446, 0);
             this.label_exit.Name = "label_exit";
-            this.label_exit.Size = new System.Drawing.Size(50, 49);
+            this.label_exit.Size = new System.Drawing.Size(29, 29);
             this.label_exit.TabIndex = 2;
             this.label_exit.Text = "X";
             this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
@@ -244,9 +240,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(560, 26);
+            this.label6.Location = new System.Drawing.Point(691, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(309, 49);
+            this.label6.Size = new System.Drawing.Size(178, 29);
             this.label6.TabIndex = 1;
             this.label6.Text = "Manage Guest";
             // 
@@ -257,7 +253,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 85);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1293, 347);
+            this.panel2.Size = new System.Drawing.Size(1475, 347);
             this.panel2.TabIndex = 12;
             // 
             // dataGridView_guest
@@ -285,9 +281,10 @@
             this.dataGridView_guest.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView_guest.Location = new System.Drawing.Point(0, 0);
             this.dataGridView_guest.Name = "dataGridView_guest";
+            this.dataGridView_guest.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView_guest.RowHeadersVisible = false;
             this.dataGridView_guest.RowHeadersWidth = 72;
-            this.dataGridView_guest.Size = new System.Drawing.Size(1293, 347);
+            this.dataGridView_guest.Size = new System.Drawing.Size(1475, 347);
             this.dataGridView_guest.TabIndex = 1;
             this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -340,7 +337,7 @@
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 72;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1293, 347);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1475, 347);
             this.guna2DataGridView1.TabIndex = 0;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -366,10 +363,10 @@
             // 
             // GuestForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 44F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ClientSize = new System.Drawing.Size(1293, 847);
+            this.ClientSize = new System.Drawing.Size(1475, 847);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
