@@ -35,10 +35,7 @@ namespace Hotel_Management_System
             this.Hide();
             login.Show();
         }
-<<<<<<< Updated upstream
-=======
-
-        private void button_hotelSearch_Click_1(object sender, EventArgs e)
+        /*private void button_hotelSearch_Click_1(object sender, EventArgs e)
         {
             panel_main.Controls.Clear();
             HotelSearch hotelSearch = new HotelSearch();
@@ -47,7 +44,6 @@ namespace Hotel_Management_System
             hotelSearch.FormBorderStyle = FormBorderStyle.None;
             panel_main.Controls.Add(hotelSearch);
             hotelSearch.Show();
-        }
->>>>>>> Stashed changes
+        }*/
     }
 }
