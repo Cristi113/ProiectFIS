@@ -22,13 +22,32 @@ namespace Hotel_Management_System
             Application.Exit();
         }
 
+
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void button_logout_Click(object sender, EventArgs e)
         {
-            panel_slide.Height = button_logout.Height;
-            panel_slide.Top = button_logout.Top;
             LoginForm login = new LoginForm();
             this.Hide();
             login.Show();
         }
+<<<<<<< Updated upstream
+=======
+
+        private void button_hotelSearch_Click_1(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            HotelSearch hotelSearch = new HotelSearch();
+            hotelSearch.TopLevel = false;
+            hotelSearch.Dock = DockStyle.Fill;
+            hotelSearch.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(hotelSearch);
+            hotelSearch.Show();
+        }
+>>>>>>> Stashed changes
     }
 }
