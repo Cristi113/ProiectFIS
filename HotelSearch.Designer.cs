@@ -180,7 +180,6 @@
             this.dataGridView_hotelSearch.ThemeStyle.RowsStyle.Height = 22;
             this.dataGridView_hotelSearch.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView_hotelSearch.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dataGridView_hotelSearch.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_hotelSearch_CellClick);
             // 
             // label_exit
             // 
@@ -192,6 +191,7 @@
             this.label_exit.Size = new System.Drawing.Size(29, 29);
             this.label_exit.TabIndex = 2;
             this.label_exit.Text = "X";
+            this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
             // 
             // label6
             // 
@@ -270,7 +270,7 @@
             this.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Red;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "HotelSearch";
             this.Text = "HotelSearch";
             this.Load += new System.EventHandler(this.HotelSearch_Load);

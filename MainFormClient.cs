@@ -17,25 +17,20 @@ namespace Hotel_Management_System
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label2_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button_logout_Click(object sender, EventArgs e)
+        private void button_logout_Click_1(object sender, EventArgs e)
         {
-            panel_slide.Height = button_logout.Height;
-            panel_slide.Top = button_logout.Top;
             LoginForm login = new LoginForm();
             this.Hide();
             login.Show();
         }
 
-        private void button_hotelSearch_Click(object sender, EventArgs e)
+        private void button_hotelSearch_Click_1(object sender, EventArgs e)
         {
-            panel_slide.Height = button_hotelSearch.Height;
-            panel_slide.Top = button_hotelSearch.Top;
-
             panel_main.Controls.Clear();
             HotelSearch hotelSearch = new HotelSearch();
             hotelSearch.TopLevel = false;

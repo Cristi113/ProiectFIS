@@ -26,9 +26,10 @@ namespace Hotel_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textBox_hotelName.Text == "")
+            if (textBox_hotelName.Text == "")
             {
                 MessageBox.Show("Required Field - Hotel Name", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
             try
             {
@@ -37,6 +38,8 @@ namespace Hotel_Management_System
                 if (selectHotel)
                 {
                     getTable();
+                    //dataGridView_hotelSearch.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    //dataGridView_hotelSearch.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 }
                 else
                 {
@@ -50,18 +53,42 @@ namespace Hotel_Management_System
             }
         }
 
-        private void HotelSearch_Load(object sender, EventArgs e)
+        private void getTable(string hotelName = null)
         {
-            getTable();
-        }
-        private void getTable()
-        {
-            dataGridView_hotelSearch.DataSource = hotelSearch.getHotel();
+            dataGridView_hotelSearch.DataSource = hotelSearch.getHotel(hotelName);
+
+            if (dataGridView_hotelSearch.Columns.Count > 0)
+            {
+                dataGridView_hotelSearch.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dataGridView_hotelSearch.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            }
+            foreach (DataGridViewRow row in dataGridView_hotelSearch.Rows)
+            {
+                if (row.Cells[0].Value != null && row.Cells[0].Value.ToString().Equals(hotelName, StringComparison.OrdinalIgnoreCase))
+                {
+                    row.DefaultCellStyle.ForeColor = Color.Blue;
+                    row.DefaultCellStyle.Font = new Font(dataGridView_hotelSearch.Font, FontStyle.Bold);
+                }
+            }
         }
 
-        private void dataGridView_hotelSearch_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void HotelSearch_Load(object sender, EventArgs e)
+        {
+            //getTable();
+
+            //dataGridView_hotelSearch.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            //dataGridView_hotelSearch.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        }
+
+
+        private void dataGridView_hotelSearch_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             textBox_hotelName.Text = dataGridView_hotelSearch.CurrentRow.Cells[0].Value.ToString();
+        }
+
+        private void label_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
