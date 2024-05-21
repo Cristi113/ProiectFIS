@@ -57,5 +57,16 @@ namespace Hotel_Management_System
             panel_main.Controls.Clear();
             panel_main.Controls.Add(panel_cover);
         }
+
+        private void button_room_Click(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            ReservationForm rooms = new ReservationForm();
+            rooms.TopLevel = false;
+            rooms.Dock = DockStyle.Fill;
+            rooms.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(rooms);
+            rooms.Show();
+        }
     }
 }

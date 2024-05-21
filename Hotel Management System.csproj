@@ -56,6 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookRoomsClass.cs" />
+    <Compile Include="BookRoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRoomsForm.Designer.cs">
+      <DependentUpon>BookRoomsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBaseConnection.cs" />
     <Compile Include="GuestClass.cs" />
     <Compile Include="GuestForm.cs">
@@ -112,6 +119,9 @@
     <Compile Include="RoomForm.Designer.cs">
       <DependentUpon>RoomForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BookRoomsForm.resx">
+      <DependentUpon>BookRoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuestForm.resx">
       <DependentUpon>GuestForm.cs</DependentUpon>
     </EmbeddedResource>

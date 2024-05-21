@@ -48,10 +48,52 @@ namespace Hotel_Management_System
 
             connection.OpenCon();
             MySqlDataReader reader = command.ExecuteReader();
-            bool exists = reader.HasRows; // Check if any rows are returned
+            bool exists = reader.HasRows;
             connection.CloseCon();
 
             return exists;
+        }
+        public string getHotelName(string hotelName)
+        {
+            string selectQuery = "SELECT hotelName FROM hotel WHERE hotelName = @hotelName";
+            MySqlCommand command = new MySqlCommand(selectQuery, connection.GetConnection());
+            command.Parameters.Add("@hotelName", MySqlDbType.VarChar).Value = hotelName;
+
+            connection.OpenCon();
+            MySqlDataReader reader = command.ExecuteReader();
+            bool exists = reader.HasRows;
+            connection.CloseCon();
+            if (exists)
+            {
+                return hotelName;
+            }
+            else
+            {
+                return "";
+            }
+        }
+        public DataTable getHotel2()
+        {
+            string selectQuerry = "SELECT * FROM `hotel`";
+            MySqlCommand command = new MySqlCommand(selectQuerry, connection.GetConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            return table;
+        }
+
+        public string typeByHotelName(string hotelName)
+        {
+            string selectQuerry = "SELECT 'hotelName' FROM `hotel` WHERE `hotelName` = @hotelName";
+            MySqlCommand command = new MySqlCommand(selectQuerry, connection.GetConnection());
+            command.Parameters.Add("@hotelName", MySqlDbType.VarChar).Value = hotelName;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table.Rows[0][0].ToString();
         }
     }
 }

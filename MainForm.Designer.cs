@@ -33,36 +33,34 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button_logout = new System.Windows.Forms.Button();
             this.button_room = new System.Windows.Forms.Button();
-            this.button_reception = new System.Windows.Forms.Button();
             this.button_guest = new System.Windows.Forms.Button();
             this.button_home = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_cover = new System.Windows.Forms.Panel();
+            this.textBox_quote = new System.Windows.Forms.TextBox();
             this.panel_slide = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.panel_main = new System.Windows.Forms.Panel();
-            this.textBox_quote = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel_main = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_cover.SuspendLayout();
-            this.panel_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel_main.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button_logout);
             this.panel2.Controls.Add(this.button_room);
-            this.panel2.Controls.Add(this.button_reception);
             this.panel2.Controls.Add(this.button_guest);
             this.panel2.Controls.Add(this.button_home);
             this.panel2.Controls.Add(this.panel3);
@@ -79,9 +77,9 @@
             this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_logout.ForeColor = System.Drawing.Color.Red;
             this.button_logout.Image = ((System.Drawing.Image)(resources.GetObject("button_logout.Image")));
-            this.button_logout.Location = new System.Drawing.Point(0, 678);
+            this.button_logout.Location = new System.Drawing.Point(0, 665);
             this.button_logout.Name = "button_logout";
-            this.button_logout.Size = new System.Drawing.Size(182, 157);
+            this.button_logout.Size = new System.Drawing.Size(182, 184);
             this.button_logout.TabIndex = 5;
             this.button_logout.Text = "Logout";
             this.button_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -95,30 +93,14 @@
             this.button_room.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_room.ForeColor = System.Drawing.Color.Red;
             this.button_room.Image = ((System.Drawing.Image)(resources.GetObject("button_room.Image")));
-            this.button_room.Location = new System.Drawing.Point(0, 551);
+            this.button_room.Location = new System.Drawing.Point(0, 500);
             this.button_room.Name = "button_room";
-            this.button_room.Size = new System.Drawing.Size(182, 127);
+            this.button_room.Size = new System.Drawing.Size(182, 165);
             this.button_room.TabIndex = 4;
             this.button_room.Text = "Room";
             this.button_room.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_room.UseVisualStyleBackColor = true;
             this.button_room.Click += new System.EventHandler(this.button_room_Click);
-            // 
-            // button_reception
-            // 
-            this.button_reception.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_reception.FlatAppearance.BorderSize = 0;
-            this.button_reception.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_reception.ForeColor = System.Drawing.Color.Red;
-            this.button_reception.Image = ((System.Drawing.Image)(resources.GetObject("button_reception.Image")));
-            this.button_reception.Location = new System.Drawing.Point(0, 424);
-            this.button_reception.Name = "button_reception";
-            this.button_reception.Size = new System.Drawing.Size(182, 127);
-            this.button_reception.TabIndex = 3;
-            this.button_reception.Text = "Reception";
-            this.button_reception.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_reception.UseVisualStyleBackColor = true;
-            this.button_reception.Click += new System.EventHandler(this.button_reception_Click);
             // 
             // button_guest
             // 
@@ -127,9 +109,9 @@
             this.button_guest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_guest.ForeColor = System.Drawing.Color.Red;
             this.button_guest.Image = ((System.Drawing.Image)(resources.GetObject("button_guest.Image")));
-            this.button_guest.Location = new System.Drawing.Point(0, 297);
+            this.button_guest.Location = new System.Drawing.Point(0, 335);
             this.button_guest.Name = "button_guest";
-            this.button_guest.Size = new System.Drawing.Size(182, 127);
+            this.button_guest.Size = new System.Drawing.Size(182, 165);
             this.button_guest.TabIndex = 2;
             this.button_guest.Text = "Guest";
             this.button_guest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -145,7 +127,7 @@
             this.button_home.Image = ((System.Drawing.Image)(resources.GetObject("button_home.Image")));
             this.button_home.Location = new System.Drawing.Point(0, 170);
             this.button_home.Name = "button_home";
-            this.button_home.Size = new System.Drawing.Size(182, 127);
+            this.button_home.Size = new System.Drawing.Size(182, 165);
             this.button_home.TabIndex = 1;
             this.button_home.Text = "Home";
             this.button_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -187,6 +169,19 @@
             this.panel_cover.Size = new System.Drawing.Size(1293, 847);
             this.panel_cover.TabIndex = 1;
             // 
+            // textBox_quote
+            // 
+            this.textBox_quote.BackColor = System.Drawing.SystemColors.InfoText;
+            this.textBox_quote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_quote.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_quote.ForeColor = System.Drawing.Color.Red;
+            this.textBox_quote.Location = new System.Drawing.Point(452, 144);
+            this.textBox_quote.Multiline = true;
+            this.textBox_quote.Name = "textBox_quote";
+            this.textBox_quote.Size = new System.Drawing.Size(420, 26);
+            this.textBox_quote.TabIndex = 8;
+            this.textBox_quote.Text = "“Leadership is the capacity to translate vision into reality.”";
+            // 
             // panel_slide
             // 
             this.panel_slide.BackColor = System.Drawing.Color.Red;
@@ -219,28 +214,6 @@
             this.label1.Text = "Hotel Management \r\nSystem";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // panel_main
-            // 
-            this.panel_main.Controls.Add(this.panel_cover);
-            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(0, 0);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1475, 847);
-            this.panel_main.TabIndex = 3;
-            // 
-            // textBox_quote
-            // 
-            this.textBox_quote.BackColor = System.Drawing.SystemColors.InfoText;
-            this.textBox_quote.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_quote.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_quote.ForeColor = System.Drawing.Color.Red;
-            this.textBox_quote.Location = new System.Drawing.Point(452, 144);
-            this.textBox_quote.Multiline = true;
-            this.textBox_quote.Name = "textBox_quote";
-            this.textBox_quote.Size = new System.Drawing.Size(420, 26);
-            this.textBox_quote.TabIndex = 8;
-            this.textBox_quote.Text = "“Leadership is the capacity to translate vision into reality.”";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
@@ -269,6 +242,15 @@
             this.pictureBox4.TabIndex = 13;
             this.pictureBox4.TabStop = false;
             // 
+            // panel_main
+            // 
+            this.panel_main.Controls.Add(this.panel_cover);
+            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_main.Location = new System.Drawing.Point(0, 0);
+            this.panel_main.Name = "panel_main";
+            this.panel_main.Size = new System.Drawing.Size(1475, 847);
+            this.panel_main.TabIndex = 3;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
@@ -289,10 +271,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_cover.ResumeLayout(false);
             this.panel_cover.PerformLayout();
-            this.panel_main.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel_main.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -304,7 +286,6 @@
         private System.Windows.Forms.Panel panel_cover;
         private System.Windows.Forms.Button button_home;
         private System.Windows.Forms.Button button_room;
-        private System.Windows.Forms.Button button_reception;
         private System.Windows.Forms.Button button_guest;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;

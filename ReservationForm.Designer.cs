@@ -45,11 +45,9 @@
             this.textBox_guestId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_reserveId = new System.Windows.Forms.TextBox();
-            this.button_update = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button_clean = new System.Windows.Forms.Button();
-            this.button_delete = new System.Windows.Forms.Button();
             this.panel_button = new System.Windows.Forms.Panel();
             this.button_add = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,6 +56,8 @@
             this.comboBox_roomId = new System.Windows.Forms.ComboBox();
             this.dateTimePicker_dateIn = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_dateOut = new System.Windows.Forms.DateTimePicker();
+            this.comboBox_hotelName = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_reserv)).BeginInit();
@@ -219,9 +219,9 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(494, 546);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 24);
+            this.label2.Size = new System.Drawing.Size(103, 24);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Gues ID:";
+            this.label2.Text = "Guest ID:";
             // 
             // textBox_guestId
             // 
@@ -246,21 +246,6 @@
             this.textBox_reserveId.Name = "textBox_reserveId";
             this.textBox_reserveId.Size = new System.Drawing.Size(173, 32);
             this.textBox_reserveId.TabIndex = 14;
-            // 
-            // button_update
-            // 
-            this.button_update.FlatAppearance.BorderSize = 0;
-            this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_update.ForeColor = System.Drawing.Color.Red;
-            this.button_update.Image = ((System.Drawing.Image)(resources.GetObject("button_update.Image")));
-            this.button_update.Location = new System.Drawing.Point(535, 0);
-            this.button_update.Name = "button_update";
-            this.button_update.Size = new System.Drawing.Size(326, 100);
-            this.button_update.TabIndex = 3;
-            this.button_update.Text = "Update";
-            this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_update.UseVisualStyleBackColor = true;
-            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // label4
             // 
@@ -288,7 +273,7 @@
             this.button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clean.ForeColor = System.Drawing.Color.Red;
             this.button_clean.Image = ((System.Drawing.Image)(resources.GetObject("button_clean.Image")));
-            this.button_clean.Location = new System.Drawing.Point(1095, 0);
+            this.button_clean.Location = new System.Drawing.Point(796, -3);
             this.button_clean.Name = "button_clean";
             this.button_clean.Size = new System.Drawing.Size(314, 100);
             this.button_clean.TabIndex = 5;
@@ -297,26 +282,9 @@
             this.button_clean.UseVisualStyleBackColor = true;
             this.button_clean.Click += new System.EventHandler(this.button_clean_Click);
             // 
-            // button_delete
-            // 
-            this.button_delete.FlatAppearance.BorderSize = 0;
-            this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_delete.ForeColor = System.Drawing.Color.Red;
-            this.button_delete.Image = ((System.Drawing.Image)(resources.GetObject("button_delete.Image")));
-            this.button_delete.Location = new System.Drawing.Point(783, 0);
-            this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(330, 100);
-            this.button_delete.TabIndex = 4;
-            this.button_delete.Text = "Delete";
-            this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_delete.UseVisualStyleBackColor = true;
-            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
-            // 
             // panel_button
             // 
             this.panel_button.Controls.Add(this.button_clean);
-            this.panel_button.Controls.Add(this.button_delete);
-            this.panel_button.Controls.Add(this.button_update);
             this.panel_button.Controls.Add(this.button_add);
             this.panel_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_button.Location = new System.Drawing.Point(0, 747);
@@ -330,7 +298,7 @@
             this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_add.ForeColor = System.Drawing.Color.Red;
             this.button_add.Image = ((System.Drawing.Image)(resources.GetObject("button_add.Image")));
-            this.button_add.Location = new System.Drawing.Point(254, 3);
+            this.button_add.Location = new System.Drawing.Point(464, -3);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(326, 100);
             this.button_add.TabIndex = 2;
@@ -394,12 +362,32 @@
             this.dateTimePicker_dateOut.Size = new System.Drawing.Size(173, 32);
             this.dateTimePicker_dateOut.TabIndex = 30;
             // 
+            // comboBox_hotelName
+            // 
+            this.comboBox_hotelName.FormattingEnabled = true;
+            this.comboBox_hotelName.Location = new System.Drawing.Point(940, 608);
+            this.comboBox_hotelName.Name = "comboBox_hotelName";
+            this.comboBox_hotelName.Size = new System.Drawing.Size(173, 32);
+            this.comboBox_hotelName.TabIndex = 32;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(804, 611);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(131, 24);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Hotel Name:";
+            // 
             // ReservationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.ClientSize = new System.Drawing.Size(1475, 847);
+            this.Controls.Add(this.comboBox_hotelName);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dateTimePicker_dateOut);
             this.Controls.Add(this.dateTimePicker_dateIn);
             this.Controls.Add(this.comboBox_roomId);
@@ -445,11 +433,9 @@
         private System.Windows.Forms.TextBox textBox_guestId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox_reserveId;
-        private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button_clean;
-        private System.Windows.Forms.Button button_delete;
         private System.Windows.Forms.Panel panel_button;
         private System.Windows.Forms.Button button_add;
         private System.Windows.Forms.Label label3;
@@ -458,5 +444,7 @@
         private System.Windows.Forms.ComboBox comboBox_roomId;
         private System.Windows.Forms.DateTimePicker dateTimePicker_dateIn;
         private System.Windows.Forms.DateTimePicker dateTimePicker_dateOut;
+        private System.Windows.Forms.ComboBox comboBox_hotelName;
+        private System.Windows.Forms.Label label8;
     }
 }

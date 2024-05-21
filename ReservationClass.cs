@@ -34,6 +34,7 @@ namespace Hotel_Management_System
             return Convert.ToInt32(table.Rows[0][0].ToString());
         }
 
+
         public DataTable getReserv()
         {
             string selectQuerry = "SELECT * FROM `reservation`";
@@ -87,45 +88,6 @@ namespace Hotel_Management_System
                 return false;
             }
         }
-        public bool deleteReservation(int id)
-        {
-            string deleteQuerry = "DELETE FROM `reservation` WHERE `reservationID` = @id";
-            MySqlCommand command = new MySqlCommand(deleteQuerry, connect.GetConnection());
-            command.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
-            connect.OpenCon();
-            if (command.ExecuteNonQuery() == 1)
-            {
-                connect.CloseCon();
-                return true;
-            }
-            else
-            {
-                connect.CloseCon();
-                return false;
-            }
-        }
-
-        public bool updateReservation(int reserID, string guestID, string roomID, DateTime dateIn, DateTime dateOut)
-        {
-            string insertQuerry = "UPDATE `reservation` SET `guestID`=@gID,`roomID`=@rID,`dateIn`=@Din,`dateOut`=@Dout WHERE `reserID`=@rid";
-            MySqlCommand command = new MySqlCommand(insertQuerry, connect.GetConnection());
-            command.Parameters.Add("@rid", MySqlDbType.Int32).Value = reserID;
-            command.Parameters.Add("@gID", MySqlDbType.VarChar).Value = guestID;
-            command.Parameters.Add("@rID", MySqlDbType.VarChar).Value = roomID;
-            command.Parameters.Add("@Din", MySqlDbType.Date).Value = dateIn;
-            command.Parameters.Add("@Dout", MySqlDbType.Date).Value = dateOut;
-
-            connect.OpenCon();
-            if (command.ExecuteNonQuery() == 1)
-            {
-                connect.CloseCon();
-                return true;
-            }
-            else
-            {
-                connect.CloseCon();
-                return false;
-            }
-        }
+        
     }
 }
