@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,23 @@ namespace Hotel_Management_System
             hotelSearch.FormBorderStyle = FormBorderStyle.None;
             panel_main.Controls.Add(hotelSearch);
             hotelSearch.Show();
+        }
+
+        private void button_reception_Click(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            RequestServicesForm services = new RequestServicesForm();
+            services.TopLevel = false;
+            services.Dock = DockStyle.Fill;
+            services.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(services);
+            services.Show();
+        }
+
+        private void button_home_Click(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            panel_main.Controls.Add(panel_cover);
         }
     }
 }

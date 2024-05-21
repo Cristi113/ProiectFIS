@@ -91,6 +91,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestServicesClass.cs" />
+    <Compile Include="RequestServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestServicesForm.Designer.cs">
+      <DependentUpon>RequestServicesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReservationClass.cs" />
     <Compile Include="ReservationForm.cs">
       <SubType>Form</SubType>
@@ -130,6 +137,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RequestServicesForm.resx">
+      <DependentUpon>RequestServicesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReservationForm.resx">
       <DependentUpon>ReservationForm.cs</DependentUpon>
     </EmbeddedResource>
