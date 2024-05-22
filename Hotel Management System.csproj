@@ -146,6 +146,13 @@
     <Compile Include="MainFormClient.Designer.cs">
       <DependentUpon>MainFormClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="OccupiedRoomsClass.cs" />
+    <Compile Include="OccupiedRoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccupiedRoomsForm.Designer.cs">
+      <DependentUpon>OccupiedRoomsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestServicesClass.cs" />
@@ -189,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainFormClient.resx">
       <DependentUpon>MainFormClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccupiedRoomsForm.resx">
+      <DependentUpon>OccupiedRoomsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
