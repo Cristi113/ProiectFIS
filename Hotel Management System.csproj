@@ -106,6 +106,13 @@
     <Compile Include="BookRoomsForm.Designer.cs">
       <DependentUpon>BookRoomsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateAccountClass.cs" />
+    <Compile Include="CreateAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccountForm.Designer.cs">
+      <DependentUpon>CreateAccountForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBaseConnection.cs" />
     <Compile Include="FeedbackClass.cs" />
     <Compile Include="FeedbackForm.cs">
@@ -178,6 +185,9 @@
     </Compile>
     <EmbeddedResource Include="BookRoomsForm.resx">
       <DependentUpon>BookRoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccountForm.resx">
+      <DependentUpon>CreateAccountForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeedbackForm.resx">
       <DependentUpon>FeedbackForm.cs</DependentUpon>

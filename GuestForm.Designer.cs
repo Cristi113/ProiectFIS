@@ -135,82 +135,82 @@
             // 
             // textBox_ID
             // 
-            this.textBox_ID.Location = new System.Drawing.Point(573, 480);
+            this.textBox_ID.Location = new System.Drawing.Point(575, 482);
             this.textBox_ID.Name = "textBox_ID";
-            this.textBox_ID.Size = new System.Drawing.Size(173, 32);
+            this.textBox_ID.Size = new System.Drawing.Size(173, 50);
             this.textBox_ID.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(497, 483);
+            this.label1.Location = new System.Drawing.Point(499, 485);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 24);
+            this.label1.Size = new System.Drawing.Size(128, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "ID No:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(445, 556);
+            this.label2.Location = new System.Drawing.Point(447, 558);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 24);
+            this.label2.Size = new System.Drawing.Size(224, 44);
             this.label2.TabIndex = 4;
             this.label2.Text = "First Name:";
             // 
             // textBox_fName
             // 
-            this.textBox_fName.Location = new System.Drawing.Point(573, 548);
+            this.textBox_fName.Location = new System.Drawing.Point(575, 550);
             this.textBox_fName.Name = "textBox_fName";
-            this.textBox_fName.Size = new System.Drawing.Size(173, 32);
+            this.textBox_fName.Size = new System.Drawing.Size(173, 50);
             this.textBox_fName.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(446, 626);
+            this.label3.Location = new System.Drawing.Point(448, 628);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 24);
+            this.label3.Size = new System.Drawing.Size(221, 44);
             this.label3.TabIndex = 6;
             this.label3.Text = "Last Name:";
             // 
             // textBox_lName
             // 
-            this.textBox_lName.Location = new System.Drawing.Point(573, 623);
+            this.textBox_lName.Location = new System.Drawing.Point(575, 625);
             this.textBox_lName.Name = "textBox_lName";
-            this.textBox_lName.Size = new System.Drawing.Size(173, 32);
+            this.textBox_lName.Size = new System.Drawing.Size(173, 50);
             this.textBox_lName.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(851, 551);
+            this.label4.Location = new System.Drawing.Point(853, 553);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 24);
+            this.label4.Size = new System.Drawing.Size(101, 44);
             this.label4.TabIndex = 10;
             this.label4.Text = "City:";
             // 
             // textBox_city
             // 
-            this.textBox_city.Location = new System.Drawing.Point(906, 548);
+            this.textBox_city.Location = new System.Drawing.Point(908, 550);
             this.textBox_city.Name = "textBox_city";
-            this.textBox_city.Size = new System.Drawing.Size(173, 32);
+            this.textBox_city.Size = new System.Drawing.Size(173, 50);
             this.textBox_city.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(824, 483);
+            this.label5.Location = new System.Drawing.Point(826, 485);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 24);
+            this.label5.Size = new System.Drawing.Size(147, 44);
             this.label5.TabIndex = 8;
             this.label5.Text = "Phone:";
             // 
             // textBox_phone
             // 
-            this.textBox_phone.Location = new System.Drawing.Point(906, 480);
+            this.textBox_phone.Location = new System.Drawing.Point(908, 482);
             this.textBox_phone.Name = "textBox_phone";
-            this.textBox_phone.Size = new System.Drawing.Size(173, 32);
+            this.textBox_phone.Size = new System.Drawing.Size(173, 50);
             this.textBox_phone.TabIndex = 7;
             // 
             // panel1
@@ -230,7 +230,7 @@
             this.label_exit.ForeColor = System.Drawing.Color.Red;
             this.label_exit.Location = new System.Drawing.Point(1446, 0);
             this.label_exit.Name = "label_exit";
-            this.label_exit.Size = new System.Drawing.Size(29, 29);
+            this.label_exit.Size = new System.Drawing.Size(50, 49);
             this.label_exit.TabIndex = 2;
             this.label_exit.Text = "X";
             this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
@@ -242,7 +242,7 @@
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(691, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(178, 29);
+            this.label6.Size = new System.Drawing.Size(309, 49);
             this.label6.TabIndex = 1;
             this.label6.Text = "Manage Guest";
             // 
@@ -363,7 +363,7 @@
             // 
             // GuestForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 44F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.ClientSize = new System.Drawing.Size(1475, 847);
