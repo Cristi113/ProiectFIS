@@ -56,10 +56,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(1341, 5);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(2458, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 29);
+            this.label2.Size = new System.Drawing.Size(50, 49);
             this.label2.TabIndex = 1;
             this.label2.Text = "X";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -69,10 +69,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(593, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(1087, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 56);
+            this.label1.Size = new System.Drawing.Size(502, 97);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hotel Royal";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -82,10 +82,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(769, -42);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(1410, -78);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 29);
+            this.label4.Size = new System.Drawing.Size(50, 49);
             this.label4.TabIndex = 1;
             this.label4.Text = "X";
             // 
@@ -94,10 +94,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(769, -24);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(1410, -44);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 29);
+            this.label3.Size = new System.Drawing.Size(50, 49);
             this.label3.TabIndex = 1;
             this.label3.Text = "X";
             // 
@@ -113,9 +113,9 @@
             this.panel2.Controls.Add(this.button_home);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(99, 847);
+            this.panel2.Size = new System.Drawing.Size(182, 1564);
             this.panel2.TabIndex = 6;
             // 
             // panel_cover
@@ -124,10 +124,10 @@
             this.panel_cover.Controls.Add(this.label1);
             this.panel_cover.Controls.Add(this.pictureBox3);
             this.panel_cover.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_cover.Location = new System.Drawing.Point(103, 0);
-            this.panel_cover.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_cover.Location = new System.Drawing.Point(73, 0);
+            this.panel_cover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_cover.Name = "panel_cover";
-            this.panel_cover.Size = new System.Drawing.Size(1372, 847);
+            this.panel_cover.Size = new System.Drawing.Size(2515, 1564);
             this.panel_cover.TabIndex = 1;
             // 
             // panel_main
@@ -135,9 +135,9 @@
             this.panel_main.Controls.Add(this.panel_cover);
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(0, 0);
-            this.panel_main.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1475, 847);
+            this.panel_main.Size = new System.Drawing.Size(2588, 1564);
             this.panel_main.TabIndex = 7;
             // 
             // button1
@@ -147,14 +147,15 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Red;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 556);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(0, 1028);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 139);
+            this.button1.Size = new System.Drawing.Size(182, 257);
             this.button1.TabIndex = 6;
             this.button1.Text = "Feedback";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button_logout
             // 
@@ -162,10 +163,10 @@
             this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_logout.ForeColor = System.Drawing.Color.Red;
             this.button_logout.Image = ((System.Drawing.Image)(resources.GetObject("button_logout.Image")));
-            this.button_logout.Location = new System.Drawing.Point(2, 689);
-            this.button_logout.Margin = new System.Windows.Forms.Padding(2);
+            this.button_logout.Location = new System.Drawing.Point(4, 1272);
+            this.button_logout.Margin = new System.Windows.Forms.Padding(4);
             this.button_logout.Name = "button_logout";
-            this.button_logout.Size = new System.Drawing.Size(99, 187);
+            this.button_logout.Size = new System.Drawing.Size(182, 345);
             this.button_logout.TabIndex = 5;
             this.button_logout.Text = "Logout";
             this.button_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -179,10 +180,10 @@
             this.button_room.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_room.ForeColor = System.Drawing.Color.Red;
             this.button_room.Image = ((System.Drawing.Image)(resources.GetObject("button_room.Image")));
-            this.button_room.Location = new System.Drawing.Point(0, 417);
-            this.button_room.Margin = new System.Windows.Forms.Padding(2);
+            this.button_room.Location = new System.Drawing.Point(0, 771);
+            this.button_room.Margin = new System.Windows.Forms.Padding(4);
             this.button_room.Name = "button_room";
-            this.button_room.Size = new System.Drawing.Size(99, 139);
+            this.button_room.Size = new System.Drawing.Size(182, 257);
             this.button_room.TabIndex = 4;
             this.button_room.Text = "Book Rooms";
             this.button_room.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -196,10 +197,10 @@
             this.button_reception.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_reception.ForeColor = System.Drawing.Color.Red;
             this.button_reception.Image = ((System.Drawing.Image)(resources.GetObject("button_reception.Image")));
-            this.button_reception.Location = new System.Drawing.Point(0, 278);
-            this.button_reception.Margin = new System.Windows.Forms.Padding(2);
+            this.button_reception.Location = new System.Drawing.Point(0, 514);
+            this.button_reception.Margin = new System.Windows.Forms.Padding(4);
             this.button_reception.Name = "button_reception";
-            this.button_reception.Size = new System.Drawing.Size(99, 139);
+            this.button_reception.Size = new System.Drawing.Size(182, 257);
             this.button_reception.TabIndex = 3;
             this.button_reception.Text = "Request Services";
             this.button_reception.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -213,10 +214,10 @@
             this.button_hotelSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_hotelSearch.ForeColor = System.Drawing.Color.Red;
             this.button_hotelSearch.Image = ((System.Drawing.Image)(resources.GetObject("button_hotelSearch.Image")));
-            this.button_hotelSearch.Location = new System.Drawing.Point(0, 139);
-            this.button_hotelSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.button_hotelSearch.Location = new System.Drawing.Point(0, 257);
+            this.button_hotelSearch.Margin = new System.Windows.Forms.Padding(4);
             this.button_hotelSearch.Name = "button_hotelSearch";
-            this.button_hotelSearch.Size = new System.Drawing.Size(99, 139);
+            this.button_hotelSearch.Size = new System.Drawing.Size(182, 257);
             this.button_hotelSearch.TabIndex = 2;
             this.button_hotelSearch.Text = "Hotel Search";
             this.button_hotelSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -231,9 +232,9 @@
             this.button_home.ForeColor = System.Drawing.Color.Red;
             this.button_home.Image = ((System.Drawing.Image)(resources.GetObject("button_home.Image")));
             this.button_home.Location = new System.Drawing.Point(0, 0);
-            this.button_home.Margin = new System.Windows.Forms.Padding(2);
+            this.button_home.Margin = new System.Windows.Forms.Padding(4);
             this.button_home.Name = "button_home";
-            this.button_home.Size = new System.Drawing.Size(99, 139);
+            this.button_home.Size = new System.Drawing.Size(182, 257);
             this.button_home.TabIndex = 1;
             this.button_home.Text = "Home";
             this.button_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -243,24 +244,24 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(2, 109);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(4, 201);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1368, 736);
+            this.pictureBox3.Size = new System.Drawing.Size(2508, 1359);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
             // MainFormClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ClientSize = new System.Drawing.Size(1475, 847);
+            this.ClientSize = new System.Drawing.Size(2588, 1564);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainFormClient";
             this.Text = "MainFormClient";
             this.panel2.ResumeLayout(false);

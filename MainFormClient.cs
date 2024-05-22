@@ -68,5 +68,16 @@ namespace Hotel_Management_System
             panel_main.Controls.Add(rooms);
             rooms.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            FeedbackForm feedback = new FeedbackForm();
+            feedback.TopLevel = false;
+            feedback.Dock = DockStyle.Fill;
+            feedback.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(feedback);
+            feedback.Show();
+        }
     }
 }

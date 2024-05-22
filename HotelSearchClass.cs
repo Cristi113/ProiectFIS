@@ -84,6 +84,18 @@ namespace Hotel_Management_System
 
             return table;
         }
+        public DataTable getHotelID()
+        {
+            string selectQuerry = "SELECT hotelID FROM `hotel`";
+            MySqlCommand command = new MySqlCommand(selectQuerry, connection.GetConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            return table;
+        }
 
         public string typeByHotelName(string hotelName)
         {
