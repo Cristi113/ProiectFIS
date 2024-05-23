@@ -53,7 +53,7 @@ namespace Hotel_Management_System
             panel_slide.Top = button_room.Top;
 
             panel_main.Controls.Clear();
-            RoomForm room = new RoomForm();
+            OccupiedRoomsForm room = new OccupiedRoomsForm();
             room.TopLevel = false;
             room.Dock = DockStyle.Fill;
             room.FormBorderStyle = FormBorderStyle.None;

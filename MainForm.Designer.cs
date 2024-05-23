@@ -97,7 +97,7 @@
             this.button_room.Name = "button_room";
             this.button_room.Size = new System.Drawing.Size(182, 165);
             this.button_room.TabIndex = 4;
-            this.button_room.Text = "Room";
+            this.button_room.Text = "Occupied Rooms";
             this.button_room.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_room.UseVisualStyleBackColor = true;
             this.button_room.Click += new System.EventHandler(this.button_room_Click);
@@ -197,7 +197,7 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(1252, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 29);
+            this.label2.Size = new System.Drawing.Size(50, 49);
             this.label2.TabIndex = 1;
             this.label2.Text = "X";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -209,7 +209,7 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(426, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(465, 112);
+            this.label1.Size = new System.Drawing.Size(813, 194);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hotel Management \r\nSystem";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -253,7 +253,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.ClientSize = new System.Drawing.Size(1475, 847);
