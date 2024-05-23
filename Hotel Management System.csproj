@@ -114,6 +114,13 @@
       <DependentUpon>CreateAccountForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataBaseConnection.cs" />
+    <Compile Include="DenyRoomsClass.cs" />
+    <Compile Include="DenyRoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DenyRoomsForm.Designer.cs">
+      <DependentUpon>DenyRoomsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FeedbackClass.cs" />
     <Compile Include="FeedbackForm.cs">
       <SubType>Form</SubType>
@@ -188,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateAccountForm.resx">
       <DependentUpon>CreateAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DenyRoomsForm.resx">
+      <DependentUpon>DenyRoomsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeedbackForm.resx">
       <DependentUpon>FeedbackForm.cs</DependentUpon>

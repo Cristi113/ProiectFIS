@@ -137,3 +137,5 @@ C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\ProiectFIS\obj\Debug\Hotel_Man
 C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.OccupiedRoomsForm.resources
 C:\Users\George\source\repos\ProiectFIS\obj\Debug\Hotel_Management_System.OccupiedRoomsForm.resources
 C:\Users\George\source\repos\ProiectFIS\obj\Debug\Hotel_Management_System.CreateAccountForm.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.CreateAccountForm.resources
+C:\Users\crist\source\repos\PoriectFIS\ProiectFIS\ProiectFIS\obj\Debug\Hotel_Management_System.DenyRoomsForm.resources

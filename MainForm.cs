@@ -74,5 +74,16 @@ namespace Hotel_Management_System
             this.Hide();
             login.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            DenyRoomsForm denyRoom = new DenyRoomsForm();
+            denyRoom.TopLevel = false;
+            denyRoom.Dock = DockStyle.Fill;
+            denyRoom.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(denyRoom);
+            denyRoom.Show();
+        }
     }
 }
