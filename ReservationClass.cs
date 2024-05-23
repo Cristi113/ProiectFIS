@@ -50,7 +50,7 @@ namespace Hotel_Management_System
 
         public bool setReservRoom(string rid, string sts)
         {
-            string updateQuerry = "UPDATE 'room' SET 'RoomStatus'=@sts WHERE 'roomID' = @rid";
+            string updateQuerry = "UPDATE `room` SET `RoomStatus`='Busy' WHERE `roomID` = @rid";
             MySqlCommand command = new MySqlCommand(updateQuerry, connect.GetConnection());
 
             command.Parameters.Add("@rid", MySqlDbType.VarChar).Value = rid;
@@ -67,14 +67,15 @@ namespace Hotel_Management_System
                 return false;
             }
         }
-        public bool addReservation(string guestID, string roomID, DateTime dateIn, DateTime dateOut)
+        public bool addReservation(string guestID, string roomID, DateTime dateIn, DateTime dateOut, int hotelID)
         {
-            string insertQuerry = "INSERT INTO `reservation`(`guestID`, `roomID`, `dateIn`, `dateOut`) VALUES (@gID,@rID,@Din,@Dout)";
+            string insertQuerry = "INSERT INTO `reservation`(`guestID`, `roomID`, `dateIn`, `dateOut`, `hotelID`) VALUES (@gID, @rID, @Din, @Dout, @hID)";
             MySqlCommand command = new MySqlCommand(insertQuerry, connect.GetConnection());
             command.Parameters.Add("@gID", MySqlDbType.VarChar).Value = guestID;
             command.Parameters.Add("@rID", MySqlDbType.VarChar).Value = roomID;
             command.Parameters.Add("@Din", MySqlDbType.Date).Value = dateIn;
             command.Parameters.Add("@Dout", MySqlDbType.Date).Value = dateOut;
+            command.Parameters.Add("@hID", MySqlDbType.Int32).Value = hotelID;
 
             connect.OpenCon();
             if (command.ExecuteNonQuery() == 1)
@@ -88,6 +89,7 @@ namespace Hotel_Management_System
                 return false;
             }
         }
-        
+
+
     }
 }

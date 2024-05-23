@@ -75,6 +75,8 @@ namespace Hotel_Management_System
                 DateTime dOut = dateTimePicker_dateOut.Value;
                 string hotelName = comboBox_hotelName.SelectedValue.ToString();
 
+                int hotelID = hotelSearch.getHotelIDByName(hotelName);
+
                 if (dIn < DateTime.Today)
                 {
                     MessageBox.Show("Reservation DateIn must be Today or After", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -85,7 +87,7 @@ namespace Hotel_Management_System
                 }
                 else
                 {
-                    if (reservation.addReservation(guestID, roomID, dIn, dOut) && reservation.setReservRoom(roomID, "Busy"))
+                    if (reservation.addReservation(guestID, roomID, dIn, dOut, hotelID) && reservation.setReservRoom(roomID, "Busy"))
                     {
                         getReservTable();
                         MessageBox.Show("New reservation added Successfully", "Add Reservation", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -101,6 +103,7 @@ namespace Hotel_Management_System
                 MessageBox.Show(ex.Message, "Reservation add Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
         private void dataGridView_reserv_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -12,6 +12,24 @@ namespace Hotel_Management_System
     {
         DataBaseConnection connection = new DataBaseConnection();
 
+        public int getHotelIDByName(string hotelName)
+        {
+            string selectQuery = "SELECT hotelID FROM hotel WHERE hotelName = @hotelName";
+            MySqlCommand command = new MySqlCommand(selectQuery, connection.GetConnection());
+            command.Parameters.Add("@hotelName", MySqlDbType.VarChar).Value = hotelName;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            if (table.Rows.Count > 0)
+            {
+                return Convert.ToInt32(table.Rows[0][0].ToString());
+            }
+            else
+            {
+                return -1; // sau altă valoare implicită
+            }
+        }
+
         public DataTable getHotel(string hotelName = null)
         {
             string selectQuery;
