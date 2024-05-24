@@ -79,5 +79,11 @@ namespace Hotel_Management_System
             panel_main.Controls.Add(feedback);
             feedback.Show();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            panel_main.Controls.Add(panel_cover);
+        }
     }
 }

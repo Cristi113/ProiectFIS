@@ -86,7 +86,13 @@ namespace Hotel_Management_System
             textBox_hotelName.Text = dataGridView_hotelSearch.CurrentRow.Cells[0].Value.ToString();
         }
 
-        private void label_exit_Click(object sender, EventArgs e)
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
