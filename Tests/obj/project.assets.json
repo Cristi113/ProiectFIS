@@ -381,6 +381,15 @@
             "related": ".xml"
           }
         }
+      },
+      "Hotel Management System/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Hotel Management System.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel Management System.dll": {}
+        }
       }
     }
   },
@@ -975,10 +984,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Hotel Management System/1.0.0": {
+      "type": "project",
+      "path": "../ProiectFIS/Hotel Management System.csproj",
+      "msbuildProject": "../ProiectFIS/Hotel Management System.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Hotel Management System >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
@@ -1018,7 +1033,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\crist\\source\\repos\\PoriectFIS\\ProiectFIS\\ProiectFIS\\Hotel Management System.csproj": {
+              "projectPath": "C:\\Users\\crist\\source\\repos\\PoriectFIS\\ProiectFIS\\ProiectFIS\\Hotel Management System.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
