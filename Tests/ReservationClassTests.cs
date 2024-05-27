@@ -2,6 +2,7 @@
 using System;
 using Hotel_Management_System;
 using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace HotelManagementSystem.Tests
 {

@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[17.5.0, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.3, )"

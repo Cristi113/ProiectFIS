@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 using Hotel_Management_System;
+using MySql.Data.MySqlClient;
 
 namespace HotelManagementSystem.Tests
 {
