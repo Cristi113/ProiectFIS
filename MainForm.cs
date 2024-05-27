@@ -21,5 +21,69 @@ namespace Hotel_Management_System
         {
 
         }
+
+        private void button_home_Click(object sender, EventArgs e)
+        {
+            panel_slide.Height = button_home.Height;
+            panel_slide.Top = button_home.Top;
+
+            panel_main.Controls.Clear();
+            panel_main.Controls.Add(panel_cover);
+        }
+
+        private void button_guest_Click(object sender, EventArgs e)
+        {
+            panel_slide.Height = button_guest.Height;
+            panel_slide.Top = button_guest.Top;
+
+            panel_main.Controls.Clear();
+            GuestForm guest = new GuestForm();
+            guest.TopLevel = false;
+            guest.Dock = DockStyle.Fill;
+            guest.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(guest);
+            guest.Show();
+        }
+
+        
+
+        private void button_room_Click(object sender, EventArgs e)
+        {
+            panel_slide.Height = button_room.Height;
+            panel_slide.Top = button_room.Top;
+
+            panel_main.Controls.Clear();
+            OccupiedRoomsForm room = new OccupiedRoomsForm();
+            room.TopLevel = false;
+            room.Dock = DockStyle.Fill;
+            room.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(room);
+            room.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button_logout_Click(object sender, EventArgs e)
+        {
+            panel_slide.Height = button_logout.Height;
+            panel_slide.Top = button_logout.Top;
+            LoginForm login = new LoginForm();
+            this.Hide();
+            login.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            DenyRoomsForm denyRoom = new DenyRoomsForm();
+            denyRoom.TopLevel = false;
+            denyRoom.Dock = DockStyle.Fill;
+            denyRoom.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(denyRoom);
+            denyRoom.Show();
+        }
     }
 }

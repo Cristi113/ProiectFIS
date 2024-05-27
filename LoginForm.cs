@@ -48,7 +48,7 @@ namespace Hotel_Management_System
 
         private void TextBox_password_TextChanged(object sender, EventArgs e)
         {
-            TextBox_password.UseSystemPasswordChar = true;
+            TextBox_password.UseSystemPasswordChar = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -64,27 +64,58 @@ namespace Hotel_Management_System
             }
             else
             {
-                DataTable table = new DataTable();
-                MySqlDataAdapter adapter = new MySqlDataAdapter();
-                string selectquerry = "SELECT * FROM `users` WHERE `username` = @usn AND `password` = @pass";
-                MySqlCommand command = new MySqlCommand(selectquerry, connect.GetConnection());
-                command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = TextBox_username.Text;
-                command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = TextBox_password.Text;
-                adapter.SelectCommand = command;
-                adapter.Fill(table);
 
-
-                if (table.Rows.Count > 0)
+                if (TextBox_username.Text.Trim().StartsWith("Manager"))
                 {
-                    this.Hide();
-                    MainForm mainForm = new MainForm();
-                    mainForm.Show();
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter();
+                    string selectquerry = "SELECT * FROM `manager` WHERE `managerUsername` = @usn AND `managerPassword` = @pass";
+                    MySqlCommand command = new MySqlCommand(selectquerry, connect.GetConnection());
+                    command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = TextBox_username.Text;
+                    command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = TextBox_password.Text;
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    if (table.Rows.Count > 0)
+                    {
+                        this.Hide();
+                        MainForm mainForm = new MainForm();
+                        mainForm.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Your username and Password doesn't exists", "Wrong Login Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Your username and Password doesn't exists", "Wrong Login Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter();
+                    string selectquerry = "SELECT * FROM `users` WHERE `username` = @usn AND `password` = @pass";
+                    MySqlCommand command = new MySqlCommand(selectquerry, connect.GetConnection());
+                    command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = TextBox_username.Text;
+                    command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = TextBox_password.Text;
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    if (table.Rows.Count > 0)
+                    {
+                        this.Hide();
+                        MainFormClient mainFormClient = new MainFormClient();
+                        mainFormClient.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Your username and Password doesn't exists", "Wrong Login Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
+
             }
+        }
+
+        private void button_createAccount_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CreateAccountForm createAccount =new CreateAccountForm();
+            createAccount.Show();
         }
     }
 }
