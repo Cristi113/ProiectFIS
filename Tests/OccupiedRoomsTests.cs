@@ -1,12 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
+using System;
+using Hotel_Management_System;
+using System.Data;
 
-namespace Tests
+namespace HotelManagementSystem.Tests
 {
-    internal class OccupiedRoomsTests
+    [TestFixture]
+    public class OccupiedRoomsClassTests
     {
+        private OccupiedRoomsClass occupiedRooms;
+
+        [SetUp]
+        public void Setup()
+        {
+            occupiedRooms = new OccupiedRoomsClass();
+        }
+
+        [Test]
+        public void SelectRooms_ReturnsDataTable()
+        {
+            DataTable result = occupiedRooms.selectRooms();
+
+            Assert.IsNotNull(result);
+            Assert.Greater(result.Rows.Count, 0);
+        }
     }
 }
